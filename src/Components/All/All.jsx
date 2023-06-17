@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import style from "./All.module.css"
 import { gamesDataContext } from '../../Context/GamesDataContext'
 import { Link } from 'react-router-dom'
+import Loading from '../Loading/Loading'
 
 export default function All() {
 
@@ -76,6 +77,6 @@ return <>
 
     
   </div>
-  </div>:null}
+  </div>:<Loading/>}
 </>
 }

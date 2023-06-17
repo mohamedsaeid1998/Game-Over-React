@@ -263,3 +263,75 @@ figure .opacity:hover{
 .navbar-nav .dropdown-item:hover{
   color: black !important;
 }
+
+.there {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  min-height:100vh ;
+  width: 100vw;
+  display: flex;
+  z-index: 9999;
+  position: fixed;
+}
+
+.there ul{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.there ul li {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  animation: animate 1.6s ease-in-out infinite;
+}
+@keyframes animate {
+  0%, 40%, 100%{
+    transform: scale(0.2);
+  }
+  20%{
+    transform: scale(1);
+  }
+}
+.there ul li:nth-child(1){
+  animation-delay: -1.4s;
+  background:#FF0000;
+  box-shadow: 0 0 50px #FF0000
+}
+.there ul li:nth-child(2){
+  animation-delay: -1.2s;
+  background:#E88E0C;
+  box-shadow: 0 0 50px #E88E0C
+}
+.there ul li:nth-child(3){
+  animation-delay: -1s;
+  background:#ffff00;
+  box-shadow: 0 0 50px #ffff00
+}
+.there ul li:nth-child(4){
+  animation-delay: -0.8s;
+  background:#37FF13;
+  box-shadow: 0 0 50px #37FF13
+}
+.there ul li:nth-child(5){
+  animation-delay: -0.6s;
+  background:#0DAAFF;
+  box-shadow: 0 0 50px #0DAAFF
+}
+.there ul li:nth-child(6){
+  animation-delay: -0.4s;
+  background:#6C0CE8;
+  box-shadow: 0 0 50px #6C0CE8
+}
+.there ul li:nth-child(7){
+  animation-delay: -0.2s;
+  background:#05007A;
+  box-shadow: 0 0 50px #05007A
+}

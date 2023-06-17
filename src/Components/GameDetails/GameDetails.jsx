@@ -3,6 +3,7 @@ import style from "./GameDetails.module.css"
 import { gameDetailsContext } from '../../Context/GamesDetailsContext'
 import { Link, useParams } from 'react-router-dom'
 import Slider from 'react-slick'
+import Loading from '../Loading/Loading'
 
 export default function GameDetails() {
 
@@ -126,6 +127,6 @@ return <>
 </div>
   
 </div>
-</div>:null}
+</div>:<Loading/>}
   </>
 }

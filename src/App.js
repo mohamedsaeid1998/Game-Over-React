@@ -31,7 +31,7 @@ import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
 import GamesDataContextProvider from "./Context/GamesDataContext";
 import GameDetailsContextProvider from "./Context/GamesDetailsContext";
 import GameDetails from './Components/GameDetails/GameDetails';
-
+import Loading from "./Components/Loading/Loading";
 
 
 
@@ -84,6 +84,7 @@ const [token, setToken] = useState(null)
         { path: "login", element: <Login userData={userData} /> },
         { path: "register", element: <Register /> },
         { path: "logout", element: <Logout /> },
+        {path:"loading" , element:<Loading/>},
         { path: "*", element: <NotFound /> },
       ],
     },

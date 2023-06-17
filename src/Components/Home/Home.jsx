@@ -3,6 +3,7 @@ import style from "./Home.module.css"
 import { gamesDataContext } from '../../Context/GamesDataContext'
 
 import { Link } from 'react-router-dom'
+import Loading from '../Loading/Loading'
 
 export default function Home() {
 
@@ -11,7 +12,7 @@ gameData("pc")
 },[])
 
 
-const [gameCards, setGameCards] = useState([])
+const [gameCards, setGameCards] = useState(null)
 let {getGames} = useContext(gamesDataContext)
 
 
@@ -19,38 +20,19 @@ async function gameData(gameType){
 let gameCard = await getGames(gameType)
 setGameCards(gameCard.data.splice(0,3))
 
-
-
 }
-
-
-
-const startVideo = (event)=> {
-  console.log(event);
-  const video = event.target.querySelector('video')
-  console.log(video);
-  video.muted=true
-  video.play()
-}
-
-// function stopVideo(event) {
-//   const video = event.target.querySelector('video')
-//   video.classList.add('d-none')
-//   video.muted=true
-//   video.pause()
-// }
-
 
 
 return <>
 
-<section className={`text-center mt-5  ${style.img}`} >
+{gameCards?<section>
+  <div className={`text-center mt-5  ${style.img}`} >
 <div className="container-fluid p-4">
   <h1 className='display-5 fw-bold'>Find & track the best <span className='text-primary display-5 fw-bold'>free-to-play</span> games!</h1>
   <p className='text-muted h4 fw-light'>Track what you've played and search for what to play next! Plus get free premium loot!</p>
   <Link to={"/browser/browser"} className='btn btn-outline-secondary mt-3 btn-lg'>Browser Games</Link>
 </div>
-</section>
+</div>
 
 
 
@@ -79,6 +61,7 @@ return <>
     )}
   </div>
   </div>:null}
+  </section> :<Loading/>}
 </>
 }
 

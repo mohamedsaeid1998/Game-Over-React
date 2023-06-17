@@ -2,17 +2,15 @@ import React, { useContext, useEffect, useState } from 'react'
 import style from "./GameCards.module.css"
 import { gamesDataContext } from '../../Context/GamesDataContext'
 import { Link } from 'react-router-dom'
+import Loading from '../Loading/Loading'
 
 
 
 
 export default function GameCards({k,here}) {
-
-
-  console.log(here);
     
     
-    const [gameCards, setGameCards] = useState([])
+    const [gameCards, setGameCards] = useState(null)
     let {getGames} = useContext(gamesDataContext)
     
     
@@ -62,6 +60,6 @@ export default function GameCards({k,here}) {
 
   
   </div>
-  </div>:null}
+  </div>:<Loading/>}
 </>
 }
