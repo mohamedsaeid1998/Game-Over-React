@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Game-Over-React/static/css/main.e0888aaa.css",
-    "main.js": "/Game-Over-React/static/js/main.a20fbfb1.js",
+    "main.css": "/Game-Over-React/static/css/main.90872df8.css",
+    "main.js": "/Game-Over-React/static/js/main.0a0a11a8.js",
     "static/media/fa-solid-900.ttf": "/Game-Over-React/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/paladins.png": "/Game-Over-React/static/media/paladins.b44d33d6e7ee1ba8.0fddd1fbe0a5e0a0af93.png",
     "static/media/gaming.jpg": "/Game-Over-React/static/media/gaming.ebaf2ffc84f4451d.d5751ff804c935b205d3.jpg",
@@ -18,11 +18,11 @@
     "static/media/slick.ttf": "/Game-Over-React/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Game-Over-React/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Game-Over-React/index.html",
-    "main.e0888aaa.css.map": "/Game-Over-React/static/css/main.e0888aaa.css.map",
-    "main.a20fbfb1.js.map": "/Game-Over-React/static/js/main.a20fbfb1.js.map"
+    "main.90872df8.css.map": "/Game-Over-React/static/css/main.90872df8.css.map",
+    "main.0a0a11a8.js.map": "/Game-Over-React/static/js/main.0a0a11a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0888aaa.css",
-    "static/js/main.a20fbfb1.js"
+    "static/css/main.90872df8.css",
+    "static/js/main.0a0a11a8.js"
   ]
 }
