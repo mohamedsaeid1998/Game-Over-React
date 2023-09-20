@@ -13,7 +13,7 @@ let navigate = useNavigate()
 
 async function handelRegister(values){
   setIsLoading(true)
-let {data} = await axios.post(`https://route-ecommerce.onrender.com/api/v1/auth/signup`, values).catch((err)=>{
+let {data} = await axios.post(`https://ecommerce.routemisr.com/api/v1/auth/signup`, values).catch((err)=>{
   setIsLoading(false)
   setMessageError(err.response.data.message)
 })
